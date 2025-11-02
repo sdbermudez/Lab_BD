@@ -2,5 +2,5 @@ laboratorio/
 venv/
 .env/
 *.env
-
+*.csv
 credenciales.env
