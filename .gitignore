@@ -1,0 +1,6 @@
+laboratorio/
+venv/
+.env/
+*.env
+
+credenciales.env
