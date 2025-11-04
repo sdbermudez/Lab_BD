@@ -17,6 +17,7 @@ from callbacks.callback_evolucion import callback_evo, callback_evo_multiple
 engine=conectar()
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY],suppress_callback_exceptions=True, prevent_initial_callbacks='initial_duplicate' )
+server = app.server
 app.title = "Dashboard Laboratorio"
 
 app.index_string = '''
