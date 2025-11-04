@@ -64,7 +64,7 @@ def barras(variable, mes, engine):
 def dispersion(engine):
     query = """
     SELECT 
-        c."Country_Region",
+        c."Country/Region",
         c."Confirmed",
         c."Deaths / 100 Cases" AS deaths_per_100_cases,
         c."Recovered / 100 Cases" AS recovered_per_100_cases,
