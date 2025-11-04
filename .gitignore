@@ -4,3 +4,7 @@ venv/
 *.env
 *.csv
 credenciales.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

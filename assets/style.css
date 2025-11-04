@@ -1,0 +1,10 @@
+/* Texto blanco en pestañas inactivas */
+.tab-custom {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Texto negro (o el que desees) en pestaña activa */
+.tab-selected {
+    color: black !important;
+}
