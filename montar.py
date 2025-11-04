@@ -29,9 +29,12 @@ for l in dfs:
 print(lent)
     
 
-engine = conectar()
+engine = create_engine(
+        "postgresql://lab_bd_user:oxBX2o0kh9skW9GvxKVgWpKHuU8XDTmq@dpg-d456l3qdbo4c73e8t150-a.oregon-postgres.render.com/lab_bd",
+        connect_args={'client_encoding': 'utf8'}
+    )
 
-df1.to_sql('country_wise_lates', engine, if_exists='replace',index=False)
+df1.to_sql('country_wise_latest', engine, if_exists='replace',index=False)
 df2.to_sql('covid_19_clean_complete', engine, if_exists='replace',index=False)
 df3.to_sql('day_wise', engine, if_exists='replace',index=False)
 df4.to_sql('full_grouped', engine, if_exists='replace',index=False)
