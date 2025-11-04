@@ -6,7 +6,7 @@ def layout_histogrma():
     return dcc.Tab(label='Histograma',className='tab-custom', selected_className='tab-selected',children=[
         dbc.Row([
             html.H1("Histograma por meses por pais y variable"),
-        ]), 
+        ], className='mb-4'), 
         dbc.Row([
             dbc.Col([
                 dropdown_pais()
@@ -15,8 +15,8 @@ def layout_histogrma():
                 dropdown_variable('variable-drop2')
                 
             ], width=3)
-        ]), 
+        ], className='mb-4'), 
         dbc.Row([
             dcc.Graph(id="grafico-histograma")
-        ])
+        ], className='mb-4')
     ])

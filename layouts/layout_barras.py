@@ -7,7 +7,7 @@ def layout_barras():
         dbc.Row([
             html.H1("Diagrama de barras por variable por pais"),
             
-        ]), 
+        ], className='mb-4'), 
         dbc.Row([
             dbc.Col([
                 dropdown_mes("mes-drop")
@@ -15,8 +15,8 @@ def layout_barras():
             dbc.Col([
                 dropdown_variable('variable-drop')
             ], width=3)
-        ]),
+        ], className='mb-4'),
         dbc.Row([
             dcc.Graph(id='grafico-barras')
-        ])
+        ], className='mb-4')
     ])
