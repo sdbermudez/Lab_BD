@@ -7,7 +7,7 @@ def crear_dispersion(df):
         y="deaths_per_100_cases",
         size="Confirmed",
         color="who_region",
-        hover_name="Country_Region",
+        hover_name="Country/Region",
         title="Relación entre recuperación y letalidad por país",
         color_discrete_sequence=["#2494a1", "#42d1e0", "#6ad0e0", "#a2e8f0"]
     )
