@@ -1,5 +1,5 @@
 from dash import Input, Output
-from complements.postg import barras  # o una función similar que traiga los datos
+from complements.postg import barras  
 from complements.mapa import crear_mapa
 
 def callback_mapa(app, engine):
