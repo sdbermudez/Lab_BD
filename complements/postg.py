@@ -135,7 +135,7 @@ def evolucion_multiple(engine, variables):
     if df.empty:
         return None
 
-    # 🔽 Normalizar nombres de columnas para que coincidan con los dropdowns
+    
     rename_map = {v: k for k, v in columnas_db.items()}
     df.rename(columns=rename_map, inplace=True)
 
